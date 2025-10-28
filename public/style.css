@@ -1,0 +1,167 @@
+/* === Base Styles === */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* === Header === */
+header {
+    background-color: #0078d7;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* === Main Section === */
+main {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+}
+
+/* === Spotify Section === */
+#spotify-section {
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+#spotify-section h2 {
+    color: #1DB954; /* Spotify green */
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+#spotify-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fafafa;
+}
+
+#spotify-player p {
+    color: #555;
+}
+
+/* === Footer === */
+footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+/* === Responsive Design === */
+
+/* Small devices (phones, up to 600px) */
+@media (max-width: 600px) {
+    header {
+        padding: 1.5rem 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+
+    main {
+        margin: 1rem;
+    }
+
+    button {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* Medium devices (tablets, 601px to 992px) */
+@media (min-width: 601px) and (max-width: 992px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1.1rem;
+        padding: 1rem 2.5rem;
+    }
+}
+
+/* Large devices (desktops, 993px and above) */
+@media (min-width: 993px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    main {
+        margin: 3rem auto;
+        max-width: 800px;
+    }
+
+    button {
+        font-size: 1.2rem;
+    }
+}
+
+/* Make Spotify section responsive */
+@media (max-width: 600px) {
+    #spotify-section {
+        padding: 1.5rem;
+        margin: 2rem 1rem;
+    }
+
+    #spotify-section h2 {
+        font-size: 1.4rem;
+    }
+}
